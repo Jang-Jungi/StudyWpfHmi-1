@@ -1,0 +1,74 @@
+﻿<UserControl x:Class="WpfScadaApp.MyButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfScadaApp"
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="100">
+    <Viewbox>
+        <Canvas Width="100" Height="100">
+            <!-- Step 1-->
+            <Ellipse Canvas.Left="0" Canvas.Top="0" Width="100" Height="100" StrokeThickness="2" Stroke="Gray">
+                <Ellipse.Fill>
+                    <SolidColorBrush Color="Yellow" />
+                </Ellipse.Fill>
+            </Ellipse>
+            <!-- Step 2-->
+            <Ellipse Canvas.Left="10" Canvas.Top="10" Width="80" Height="80" StrokeThickness="2" Stroke="Gray">
+                <Ellipse.Fill>
+                    <LinearGradientBrush x:Name="LinearOutlineBrush" StartPoint="0,0.5" EndPoint="1,0" SpreadMethod="Pad">
+                        <GradientStop Color="#FF071923" Offset="0" />
+                        <GradientStop Color="Silver" Offset="1" />
+                    </LinearGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <!-- Step 3-->
+            <Ellipse Canvas.Left="15" Canvas.Top="15" Width="70" Height="70" StrokeThickness="0" Stroke="Gray">
+                <Ellipse.Fill>
+                    <LinearGradientBrush x:Name="LinearInlineBrush" StartPoint="1,0.5" EndPoint="0,1" SpreadMethod="Pad">
+                        <GradientStop Color="#FF071923" Offset="1" />
+                        <GradientStop Color="#FF071923" Offset="2" />
+                    </LinearGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <!-- Step 4-->
+            <Ellipse Canvas.Left="17" Canvas.Top="17" Width="66" Height="66" StrokeThickness="0.5" Stroke="White">
+                <Ellipse.Fill>
+                    <LinearGradientBrush StartPoint="0.5,0.5" EndPoint="1,0" SpreadMethod="Pad">
+                        <GradientStop Color="Red" Offset="0" />
+                        <GradientStop Color="WhiteSmoke" Offset="1.5" />
+                    </LinearGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <!-- Step 5-->
+            <Ellipse Canvas.Left="24" Canvas.Top="24" Width="52" Height="52" StrokeThickness="0" Stroke="Gray">
+                <Ellipse.Fill>
+                    <RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" SpreadMethod="Reflect" RadiusX="0.5" RadiusY="0.5" Opacity="1">
+                        <GradientStop Color="Red" Offset="0.95" />
+                        <GradientStop Color="#FF9C2222" Offset="1" />
+                    </RadialGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <!-- Step 6-->
+            <Path x:Name="refresh" Canvas.Left="31.2" Canvas.Top="27" Stretch="Fill" 
+                  Width="38.762" Height="46.172"
+                  RenderTransformOrigin="0.5,0.5"
+                  Data="M446.71,247.546c0-59.758-26.582-113.314-68.403-149.856c-3.507,4.494-7.734,8.445-12.957,10.998   l-34.415,17.015c38.817,26.649,64.353,71.309,64.353,121.844c0,75.585-57.089,138.005-130.397,146.634l27.335-40.551   c1.096-1.624,0.954-3.773-0.326-5.248c-1.289-1.473-3.408-1.891-5.156-1.028c-51.816,25.61-17.87,8.829-141.178,69.776   c-1.472,0.727-2.401,2.225-2.401,3.867v0.007c0,1.65,0.929,3.139,2.401,3.858c0,0,95.723,47.322,141.169,69.794   c1.748,0.862,3.867,0.443,5.156-1.028c1.289-1.475,1.423-3.626,0.326-5.249l-28.615-42.475   C365.919,437.667,446.71,351.946,446.71,247.546z
+                  M203.82,1.475c-1.28,1.472-1.422,3.624-0.328,5.247l28.608,42.45    C129.497,57.098,48.389,142.944,48.389,247.546c0,59.917,26.716,113.6,68.714,150.149c3.524-4.587,7.842-8.597,13.274-11.282    l34.04-16.833c-38.96-26.623-64.605-71.382-64.605-122.034c0-75.819,57.44-138.424,131.083-146.733l-27.394,40.658    c-1.096,1.625-0.962,3.774,0.327,5.249c1.289,1.473,3.405,1.891,5.154,1.028c35.723-17.665,103.131-51.013,135.047-66.803    c5.734-2.837,5.722-11.012-0.013-13.846c-92.208-45.566-75.115-37.037-135.041-66.653C207.225-0.418,205.108,0.001,203.82,1.475z">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform />
+                        <SkewTransform />
+                        <RotateTransform />
+                        <TranslateTransform />
+                    </TransformGroup>
+                </Path.RenderTransform>
+                <Path.Fill>
+                    <SolidColorBrush Color="White"/>
+                </Path.Fill>
+            </Path>
+        </Canvas>
+
+    </Viewbox>
+</UserControl>

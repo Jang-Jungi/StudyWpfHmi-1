@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinformApp", "WinformApp\Wi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyntaxWpfApp", "SyntaxWpfApp\SyntaxWpfApp.csproj", "{948F8295-9903-4D0D-961A-03D214CBE742}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basic", "Basic", "{62EB9DFE-0102-413E-A3E9-B952ABF160CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{0EFCD490-0023-490E-89E9-0FB77CD61260}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfScadaApp", "WpfScadaApp\WpfScadaApp.csproj", "{4A780470-631D-4536-8D05-9A54097D88CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +33,19 @@ Global
 		{948F8295-9903-4D0D-961A-03D214CBE742}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{948F8295-9903-4D0D-961A-03D214CBE742}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{948F8295-9903-4D0D-961A-03D214CBE742}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A780470-631D-4536-8D05-9A54097D88CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A780470-631D-4536-8D05-9A54097D88CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A780470-631D-4536-8D05-9A54097D88CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A780470-631D-4536-8D05-9A54097D88CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C8ABFC45-24DA-4481-AF73-65813B686375} = {62EB9DFE-0102-413E-A3E9-B952ABF160CD}
+		{2F0AC206-9751-4CA8-BB6D-A53A668891E8} = {62EB9DFE-0102-413E-A3E9-B952ABF160CD}
+		{948F8295-9903-4D0D-961A-03D214CBE742} = {62EB9DFE-0102-413E-A3E9-B952ABF160CD}
+		{4A780470-631D-4536-8D05-9A54097D88CD} = {0EFCD490-0023-490E-89E9-0FB77CD61260}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A537DA8C-59E2-4E17-AF84-B80B5CFB1E80}
