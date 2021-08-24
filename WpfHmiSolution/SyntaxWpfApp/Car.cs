@@ -1,10 +1,19 @@
-﻿using System.Windows.Media;
+﻿using SyntaxWpfApp;
+using System.Windows.Media;
 
 namespace BusinessLogic
 {
-    public class Car
+    public class Car : Notifier
     {
-        public double Speed { get; set; }
+        private double speed;
+        public double Speed {
+            get { return speed; }
+            set
+            {
+                speed = value;
+                OnPropertyChanged("Speed"); // 값이 변경됨을 시스템에 알려줌
+            } 
+        }
         public Color Color { get; set; }
         public Human Driver { get; set; }
     }

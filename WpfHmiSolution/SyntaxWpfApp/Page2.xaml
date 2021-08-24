@@ -7,6 +7,9 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page2">
+    <Page.Resources>
+        
+    </Page.Resources>
 
     <Grid>
         <Button x:Name="BtnBack" Content="Back to Page1" Width="100" Height="30" Click="BtnBack_Click" />

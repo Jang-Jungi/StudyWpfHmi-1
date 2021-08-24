@@ -54,7 +54,9 @@
             <ProgressBar Height="20" Value="{Binding Value, ElementName=slider}" />
             <TextBlock Text="{Binding Value, ElementName=slider, StringFormat={}{0:0.0}}" TextAlignment="Center" />
         </StackPanel>
+        <Button Content="Button" Grid.Column="2" HorizontalAlignment="Left" Margin="79,68,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"  Height="22" />
 
+        <Rectangle Grid.Column="2" Grid.Row="1" Width="50" Height="50" Fill="{StaticResource accentBrush}" />
         <!--<Button x:Name="BtnClick" Content="Click" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" />-->
     </Grid>
 </Window>

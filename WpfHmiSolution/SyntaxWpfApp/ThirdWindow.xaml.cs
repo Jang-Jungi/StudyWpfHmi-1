@@ -41,5 +41,6 @@ namespace SyntaxWpfApp
             // TxtTest.Text = c.Speed.ToString();
             StpCar.DataContext = c;
         }
+
     }
 }

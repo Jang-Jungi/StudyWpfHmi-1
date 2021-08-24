@@ -18,5 +18,6 @@
             </logic:Car>
         </Label>
         <!--<Label x:Name="LblCarSpeed" Content="TEST" />-->
+        
     </Grid>
 </Page>
